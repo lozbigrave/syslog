@@ -1,12 +1,13 @@
 #! /bin/bash
 # June/July 2018 Loz Bigrave
-##### change these variables only:
+
 # This alert is per-device, in this case 1.0.0.96, hostname MySwitch
 
 #create a debug file
 set -x; exec 2>/root/debug_myswitch_cisco_login_failure.log
 
-# Find files modified in the last x minutes
+
+# Find files modified in the last x minutes, change this to search your device IP
 targetfiles=$(find /syslogs/1.0.0.96/ -type f -mmin -1 -exec ls {} +)
 
 #  Exit if no files have been modified in the last x minutes
@@ -24,6 +25,7 @@ if [ -z "$targetfiles" ]; then
 		SITE="Daventry"
 		mailbody="/root/syslog_mailers/cisco_myswitch_logonfailure.mailer"
 
+		# don't change anything below here apart from from=
 
 		rightnow=$(date +%H:%M:)
 		loadedcontent=$(cat $targetfiles | grep -i "$logentry" | grep -E $rightnow'[[:digit:]]{2}')

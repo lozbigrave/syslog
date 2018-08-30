@@ -1,6 +1,6 @@
 #! /bin/bash
 # June/July 2018 Loz Bigrave
-##### change these variables only:
+
 # This alert is per-device, in this case 1.0.0.96, hostname MySwitch
 
 # create a debug file
@@ -13,8 +13,11 @@ SITE="myswitch Daventry"
 mailbody="/root/syslog_mailers/Cisco_Port_Sec_Alert.mailer"
 config="/root/configs/myswitch-coresw-config"
 
-# Find files modified in the last x minutes
+# Find files modified in the last x minutes, , change this to search your device IP
 targetfiles=$(find /syslogs/1.0.0.96/ -type f -mmin -1 -exec ls {} +)
+
+# don't change anything below here apart from from=
+
 
 #  Exit if no files have been modified in the last x minutes
 if [ -z "$targetfiles" ]; then
