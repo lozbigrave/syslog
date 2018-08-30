@@ -24,6 +24,8 @@ Place the syslog_commander.sh and syslog_logrotate.sh in the /root/ folder
 
 Place the rule files, plus any you create, in the /root/syslog_rules folder
 
+Edit the rule files to target your device log folders
+
 Place Cisco (not tested with other hardware) config files in the /root/configs folder.
 
 Edit root crontab ( while root run 'crontab -e') and add the lines from the file ‘crontab’ (recommend copy and paste)
