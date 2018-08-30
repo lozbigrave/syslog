@@ -1,0 +1,12 @@
+interface GigabitEthernet1/0/1
+
+description Client Richard the Third Laptop
+ switchport mode access
+
+ switchport port-security violation  restrict
+
+ switchport port-security mac-address sticky
+
+ switchport port-security mac-address sticky 0801.0g8a.1463
+
+ switchport port-security
