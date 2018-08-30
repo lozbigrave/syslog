@@ -1,0 +1,29 @@
+A network security violation has occurred. An unexpected device has been connected to a switch port.
+
+Site name:
+ACME USA
+
+Trigger time:
+Thu Aug 30 01:03:31 UCT 2018
+
+Trigger event (Cisco):
+'PORT_SECURITY-2-PSECURE_VIOLATION'
+
+Log file:
+/syslogs/1.1.0.24/2018/08/2018.08.30
+
+Log File quick link
+http://syslogserver/1.1.0.24/2018/08/2018.08.30
+
+The port is (switch/module/port):
+interface GigabitEthernet1/0/21
+ description Client Richard the Third PC
+
+Details:
+Aug 30 01:03:17 10.2.0.240 025976: Aug 30 01:03:16.352: %PORT_SECURITY-2-PSECURE_VIOLATION: Security violation occurred, caused by MAC address 23.g1.0f12.1d3d on port GigabitEthernet1/0/21.
+
+Full switch configuration file:
+https://my.sharepoint.com/sites/IT/blah
+
+Useful links:
+https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/12-2/25ew/configuration/guide/conf/port_sec.html#wp1047696 
