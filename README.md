@@ -1,15 +1,16 @@
 # syslog
-Welcome to my syslog project, a free, centralised syslog solution using Linux and syslog-ng
+Welcome to my syslog project, a free, centralised syslog solution with alerting using Linux and syslog-ng
 
 This is a bespoke and GPL syslog solution to receive logs from remote devices and store them in a central repository. 
 
 Features:
 •	A centralised syslog server running Linux
 •	Syslogs from remote devices stored in folders per-device and sub organised by date
-•	Email alerting for events
+•	Email alerting for events such as failed Windows/Cisco logins
 •	Listening sockets on UDP/TCP and multiple ports
 •	Web interface for log browsing
 •	Archiving (to tar.gz) for aging logs
+
 
 At the heart: Ubuntu Linux Server running syslog-ng (https://www.syslog-ng.com/products/open-source-log-management/)
 
