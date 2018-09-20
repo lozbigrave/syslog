@@ -1,5 +1,5 @@
 # syslog
-Welcome to my syslog project, a free, centralised syslog solution with alerting using Linux and syslog-ng
+Welcome to my syslog project - a free, centralised syslog solution with alerting using Linux and syslog-ng
 
 Features:
 •	A centralised syslog server running Linux
